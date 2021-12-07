@@ -69,9 +69,9 @@
         End Of 2021 Party
       </p>
     </div>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-3 gap-4 mt-10">
       <div class="border-separate border border-grey-500 p-8">
-        <p class="mt-1 text-lg text-gray-800 font-semibold">
+        <p class="mt-1 text-2xl text-gray-800 font-semibold">
           Enter all names. One name per line.
         </p>
         <textarea
@@ -129,12 +129,12 @@
         />
         <p
           class="
-            text-3xl
+            text-2xl
             sm:text-5xl
             lg:text-6xl
             leading-none
             font-extrabold
-            text-gray-900
+            text-purple-900
             tracking-tight
             mb-8
           "
@@ -143,6 +143,11 @@
         </p>
         <div id="winners"></div>
       </div>
+    </div>
+
+    <div class="font-semibold text-grey-400 mt-10">
+      Make with <span class="text-red-600">💝</span> by Kamaro from
+      <span class="font-semibold">Kasha Inc</span>.
     </div>
 
     <script id="rendered-js">
@@ -213,13 +218,11 @@
 
             winnersArea.innerHTML =
               winnersArea.innerHTML +
-              "<div class='bg-yellow-500 p-1 m-2 font-semibold'>" +
-              "✨" +
+              "<div class='bg-green-100 p-1 m-2 font-semibold'>" +
+              '<span class="text-purple-500">✨</span>' +
               randomTag.innerHTML +
-              "✨" +
-              "</div>";
-
-            highlightTheWinner(randomTag);
+              '<span class="text-yellow-500">✨</span>' +
+              highlightTheWinner(randomTag);
           }, 100);
         }, times * 100);
       }
