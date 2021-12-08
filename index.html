@@ -40,12 +40,12 @@
 
       .tag {
         background-color: #f0932b;
-        border-radius: 50px;
+        border-radius: 5px;
         color: #fff;
         display: inline-block;
         font-size: 14px;
         padding: 2px 4px;
-        margin: 0 5px 10px 0;
+        margin: 0 5px 5px 0;
       }
 
       .tag.highlight {
@@ -59,15 +59,13 @@
   </head>
 
   <body translate="no" class="bg-gray-100">
-    <div class="grid justify-items-center">
-      <p class="mt-1 text-5xl text-pink-500 font-semibold">
-        <img
-          src="https://kasha.co.ke/wp-content/themes/caring/images/kasha-logo.png"
-          class="w-48 float-left"
-          alt="Kasha"
-        />
-        End Of 2021 Party
-      </p>
+    <div>
+      <img
+        src="https://kasha.co.ke/wp-content/themes/caring/images/kasha-logo.png"
+        class="w-48 float-left"
+        alt="Kasha"
+      />
+      <p class="mt-1 text-5xl text-pink-500 font-semibold">End Of 2021 Party</p>
     </div>
     <div class="grid grid-cols-3 gap-4 mt-10">
       <div class="border-separate border border-grey-500 p-8">
@@ -107,7 +105,7 @@
             py-3
             px-6
             border border-transparent
-            rounded-sm
+            rounded-lg
             focus:ring-2
             focus:ring-offset-2
             focus:ring-offset-white
@@ -146,8 +144,10 @@
     </div>
 
     <div class="font-semibold text-grey-400 mt-10">
-      Make with <span class="text-red-600">💝</span> by Kamaro from
-      <span class="font-semibold">Kasha Inc</span>.
+      Make with <span class="text-red-600">💝</span> by Kamaro,
+      <a href="https://www.kasha.co/"
+        ><span class="font-semibold">Kasha Inc</span></a
+      >.
     </div>
 
     <script id="rendered-js">
@@ -221,8 +221,9 @@
               "<div class='bg-green-100 p-1 m-2 font-semibold'>" +
               '<span class="text-purple-500">✨</span>' +
               randomTag.innerHTML +
-              '<span class="text-yellow-500">✨</span>' +
-              highlightTheWinner(randomTag);
+              '<span class="text-yellow-500">✨</span>';
+
+            highlightTheWinner(randomTag);
           }, 100);
         }, times * 100);
       }
